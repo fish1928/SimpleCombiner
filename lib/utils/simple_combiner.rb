@@ -46,4 +46,19 @@ class SimpleCombiner
 
     return this_results
   end
+
+  def self.cPickup(arr)
+    results_all = []
+
+    arr.size.downto(1).each do |i|
+      results = self.combine(arr.clone, i).select do |result|
+        next nil if result.uniq.size != result.size
+        next result
+      end
+
+      results_all += results
+    end
+
+		results_all
+  end
 end

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'jinyu-simple-combiner'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2018-01-07'
   s.summary     = "simple tool for combination and permutation"
   s.description = "a simple tool for combination and permutation, no any guarentee"
